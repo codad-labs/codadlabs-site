@@ -66,6 +66,12 @@ gcloud compute ssh christoph_rico@observatory-promo --zone=us-west1-a \
   --command='git -C /srv/codadlabs-site pull --ff-only'
 ```
 
+Or from the VM itself:
+
+```bash
+update_codad
+```
+
 The user, configuration, and key match `inv sync-db` in
 `the-observatory`. Without `christoph_rico@`, gcloud logs in as your
 laptop username, which does not own the clone, and git refuses to pull.
