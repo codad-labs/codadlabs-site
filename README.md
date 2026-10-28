@@ -1,6 +1,6 @@
-# codadlabs-site
+# codadLabs-site
 
-The CoDad Lab umbrella site, served at `https://codadlabs.art`.
+The CoDad Labs umbrella site, served at `https://codadLabs.art`.
 
 Plain HTML and one stylesheet. No build step, no JavaScript.
 
@@ -11,7 +11,7 @@ Plain HTML and one stylesheet. No build step, no JavaScript.
 | `index.html` | Home |
 | `about/` | About us |
 | `portfolio/` | Portfolio index |
-| `portfolio/cielito-lindo/` | Cielito Lindo, linking out to `cielito.codadlabs.art`, with a looping video of the 3D model |
+| `portfolio/cielito-lindo/` | Cielito Lindo, linking out to `cielito.codadLabs.art`, with a looping video of the 3D model |
 | `portfolio/max-loads/` | Max Loads |
 | `merch/` | Merch ("coming soon") |
 | `events/` | Events, edited by hand |
@@ -52,7 +52,7 @@ Then open `http://localhost:8080`. Pages use root-relative paths
 
 The site runs on the same VM as the Cielito promo server
 (`observatory-promo`), behind the same Caddy. Caddy serves this repo's
-files straight from a clone at `/srv/codadlabs-site`. There is no
+files straight from a clone at `/srv/codadLabs-site`. There is no
 service to run and no build to do.
 
 Push from your laptop, then pull on the VM. Caddy reads files from
