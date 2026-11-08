@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Desktop Cielito Guide | CoDad Labs</title>
+<meta name="description" content="Set up and use your Desktop Cielito: Wi-Fi setup, the companion page, and troubleshooting." />
+<link rel="icon" href="/images/logo.png" />
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header>
+  <a class="logo" href="/"><img src="/images/logo.png" alt="CoDad Labs" /></a>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/portfolio/">Portfolio</a></li>
+      <li><a href="https://givebutter.com/TODO">Events</a></li>
+      <li><a href="/merch/">Merch</a></li>
+      <li><a href="https://givebutter.com/TODO">Donate</a></li>
+      <li><a href="https://instagram.com/codadlabs">Instagram</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Desktop Cielito guide</h1>
+  <p>
+    Desktop Cielito is a small LED panel that shows all the submitted constellations. This guide covers setup and everyday use.
+  </p>
+
+  <ul>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#companion">The companion page</a></li>
+    <li><a href="#settings">Device settings</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+    <li><a href="#help">Contact</a></li>
+  </ul>
+
+  <h2 id="setup">Setup</h2>
+  <p>
+    You need a phone/laptop and a home Wi-Fi network. The device will retrieve constellations from the internet, so it must be able to join your network. The panel does not work on mobile data or public Wi-Fi.
+  </p>
+  <ol>
+    <li>
+      Plug the panel into power with the USB-C cable in the box. Use a
+      charger rated at 5 V and 3 A or more. The cable is for power only.
+    </li>
+    <li>
+      On your phone, open Wi-Fi settings and join the network named
+      <strong>Cielito Lindo Setup</strong>. The password is
+      <strong>cielitito</strong>. You can also scan the QR code on your
+      card to join the network.
+    </li>
+    <li>
+      A setup page opens on its own. If it does not, open your browser
+      and go to <code>192.168.4.1</code>.
+    </li>
+    <li>
+      Choose your home network, type its password, and save. The panel
+      joins your network and the setup network disappears.
+    </li>
+    <li>
+      Make sure your phone is back on your home Wi-Fi, then scan the code
+      on the stand, or open <code>http://cielito-lindo.local/</code>, to
+      see the companion page.
+    </li>
+  </ol>
+
+  <h3>Changing your Wi-Fi later</h3>
+  <p>
+    If you change routers or passwords, the panel cannot join your old
+    network. It starts <strong>Cielito Lindo Setup</strong> again. Repeat
+    steps 2 to 4 with your new details.
+  </p>
+
+  <h2 id="companion">The Companion Page</h2>
+  <p>
+    The companion page shows you details of the current constellation on the panel,
+    with its name and story. It updates every few seconds. Your phone
+    must be connected to the same Wi-Fi network as the panel.
+  </p>
+  <ul>
+    <li>
+      <strong>Find on the Sky Map</strong> opens the full map of
+      constellations, zoomed to the one on your panel.
+    </li>
+    <li>
+      <strong>Add a constellation</strong> opens the page where you draw
+      your own, name it, and tell its story. A new constellation takes
+      about 20 minutes to reach your panel.
+    </li>
+    <li>
+      <strong>Keep this one on the sky</strong> holds the constellation
+      you are looking at. The panel keeps it lit and pauses the rotation
+      until you turn the switch off.
+    </li>
+  </ul>
+  <p>
+    Anyone on your Wi-Fi network can use the companion page and change
+    these settings.
+  </p>
+
+  <h2 id="settings">Device settings</h2>
+  <p>
+    Open <strong>Device settings</strong> at the bottom of the companion
+    page.
+  </p>
+  <ul>
+    <li>
+      <strong>Family-friendly sky</strong> is on by default. It shows only
+      constellations marked family-friendly. While it
+      is on, you cannot hold a constellation that has not been marked
+      family-friendly. Turn it off to see every constellation.
+    </li>
+    <li>
+      <strong>Screen dark</strong> fades the panel to black. The
+      rotation keeps running behind it, and the panel keeps updating.
+    </li>
+    <li>
+      <strong>Dark every night</strong> turns the panel off on a daily
+      schedule. Choose the time to turn off and the time to turn back on.
+      Times follow your phone's time zone. This feature works in the US
+      and Canada. If you turn the screen on or off by hand during a
+      scheduled window, your choice holds until the next scheduled change,
+      and then the schedule takes over again.
+    </li>
+  </ul>
+
+  <h3>Updates</h3>
+  <p>
+    The panel updates itself. About every six hours it checks for a new
+    version. When it finds one, the panel fades to black for 10 to 30
+    seconds while it installs, then comes back. Your settings and any held
+    constellation stay as they were.
+  </p>
+
+  <h2 id="troubleshooting">Troubleshooting</h2>
+
+  <h3>The companion page does not load</h3>
+  <p>
+    Confirm that your phone is on the same Wi-Fi network as the panel and
+    not on mobile data. Turn off any VPN. Try
+    <code>http://cielito-lindo.local/</code> again, or scan the code on the
+    stand.
+  </p>
+
+  <h3>The panel is dark</h3>
+  <p>
+    Check that the cable is firmly seated and the charger is plugged in.
+    Then open the companion page and check whether <strong>Screen
+    dark</strong> or <strong>Dark every night</strong> is on.
+  </p>
+
+  <h3>My constellation has not appeared</h3>
+  <p>
+    Allow about 20 minutes after you submit it. The panel shows a rotating
+    selection of the sky, so a new constellation may take some time to
+    come around. With <strong>Family-friendly sky</strong> on, the panel
+    skips any constellation not marked family-friendly.
+  </p>
+
+  <h3>The page says "Waiting for the next constellation"</h3>
+  <p>
+    The page has no constellation to show yet. This happens after the panel
+    restarts, and after you turn on <strong>Family-friendly sky</strong>
+    while a constellation that is not family-friendly was on screen. It
+    fills in when the next one appears.
+  </p>
+
+  <h3>The panel cannot join my Wi-Fi</h3>
+  <p>
+    Check that the network is a 2.4 GHz network and that you typed the
+    password correctly. Rejoin <strong>Cielito Lindo Setup</strong> and
+    enter your details again.
+  </p>
+
+  <h2 id="help">Contact</h2>
+  <!-- TODO: replace with the support email once forwarding is set up. -->
+  <p class="placeholder">
+    PLACEHOLDER: Questions or problems? Email [support address].
+  </p>
+</main>
+
+<footer>
+  <p>CoDad Labs &middot; <a href="https://instagram.com/codadlabs">Instagram</a></p>
+</footer>
+</body>
+</html>
