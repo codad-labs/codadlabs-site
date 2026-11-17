@@ -14,6 +14,7 @@ Plain HTML and one stylesheet. No build step, no JavaScript.
 | `portfolio/cielito-lindo/` | Cielito Lindo, linking out to `cielito.codadlabs.art`, with a looping video of the 3D model |
 | `portfolio/max-loads/` | Max Loads |
 | `merch/` | Merch ("coming soon") |
+| `desktop-cielito/guide/` | User guide for the Desktop Cielito, linked from the device's companion page and from the `/g` short link |
 | `events/` | Events, edited by hand |
 | `style.css` | Shared styles |
 | `images/` | Logo and photos |
@@ -79,4 +80,7 @@ laptop username, which does not own the clone, and git refuses to pull.
 `--ff-only` refuses to pull if the VM's clone has diverged, which
 should never happen since you never edit files on the VM.
 
-Reload Caddy only after editing the Caddyfile itself.
+Reload Caddy only after editing the Caddyfile itself. The Caddyfile is
+tracked in `the-observatory` at `deploy/gcp/Caddyfile`, because one file
+serves both sites. It holds the `/g` short link to the Desktop Cielito
+guide. See "Updating the Caddyfile" in `deploy/gcp/README.md` there.
