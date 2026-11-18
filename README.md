@@ -10,7 +10,6 @@ Plain HTML and one stylesheet. No build step, no JavaScript.
 |---|---|
 | `index.html` | Home |
 | `about/` | About us |
-| `portfolio/` | Portfolio index |
 | `portfolio/cielito-lindo/` | Cielito Lindo, linking out to `cielito.codadlabs.art`, with a looping video of the 3D model |
 | `portfolio/max-loads/` | Max Loads |
 | `merch/` | Merch ("coming soon") |
@@ -22,7 +21,13 @@ Plain HTML and one stylesheet. No build step, no JavaScript.
 Each page lives in its own folder as `index.html`, so URLs read
 `/about/` instead of `/about.html`.
 
-Donate and Instagram are external links in the nav, not pages.
+Donate and Instagram are external links in the nav, not pages. The nav's
+Portfolio entry is a `<details>` dropdown listing each piece; `/portfolio/`
+itself redirects to the home page in the Caddyfile.
+
+**Media.** Keep images no wider than about 1400px and use WebP. Use a
+muted looping MP4 instead of a GIF. Give every `<img>` and `<video>` its
+`width` and `height` so the page does not jump while it loads.
 
 ## Editing
 

@@ -46,8 +46,39 @@ nav ul {
   list-style: none;
 }
 
-nav a[aria-current="page"] {
+nav a[aria-current="page"],
+nav details.current summary {
   font-weight: 600;
+}
+
+nav details {
+  position: relative;
+}
+
+nav summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+nav summary::-webkit-details-marker {
+  display: none;
+}
+
+nav summary::after {
+  content: " \25BE";
+}
+
+nav details ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  white-space: nowrap;
+  background: #fafafa;
+  border: 1px solid #ddd;
 }
 
 .actions {
@@ -69,10 +100,19 @@ nav a[aria-current="page"] {
   background: #fff3c4;
 }
 
+img,
 video {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+main img,
+main video {
+  margin: 24px 0;
+}
+
+main video {
   background: #ddd;
 }
 

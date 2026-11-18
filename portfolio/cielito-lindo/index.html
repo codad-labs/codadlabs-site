@@ -14,7 +14,15 @@
   <nav>
     <ul>
       <li><a href="/about/">About</a></li>
-      <li><a href="/portfolio/" aria-current="page">Portfolio</a></li>
+      <li>
+        <details class="current">
+          <summary>Portfolio</summary>
+          <ul>
+            <li><a href="/portfolio/cielito-lindo/" aria-current="page">Cielito Lindo</a></li>
+            <li><a href="/portfolio/max-loads/">Max Loads</a></li>
+          </ul>
+        </details>
+      </li>
       <li><a href="https://givebutter.com/TODO">Events</a></li>
       <li><a href="/merch/">Merch</a></li>
       <li><a href="https://givebutter.com/TODO">Donate</a></li>
@@ -47,6 +55,8 @@
 
   <video
     src="/images/cielito-hero.mp4"
+    width="1280"
+    height="720"
     autoplay
     muted
     loop
@@ -55,7 +65,7 @@
     aria-label="The Cielito Lindo canopy model, rotating"
   ></video>
   
-  <img src="/images/cielito-underneath-view.webp" alt="The Cielito Lindo canopy rendering" />
+  <img src="/images/cielito-underneath-view.webp" width="1376" height="768" loading="lazy" alt="The Cielito Lindo canopy rendering" />
 
   <h2>Support the build</h2>
   <p>
